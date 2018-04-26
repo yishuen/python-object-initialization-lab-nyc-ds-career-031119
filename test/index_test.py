@@ -8,7 +8,7 @@ class TestObjectInitialization(unittest.TestCase):
         other_driver = Driver("Lady", "Gaga", "Poker")
         self.assertEqual(new_driver.first, "Dale")
         self.assertEqual(new_driver.last, "Earnhardt")
-        self.assertEqual(new_driver.favorite_hobby, "Driving")
+        self.assertEqual(new_driver.favorite_hobby, "driving")
         self.assertEqual(other_driver.favorite_hobby, "Poker")
 
     def test_passenger_initialization(self):
