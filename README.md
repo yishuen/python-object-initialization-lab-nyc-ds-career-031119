@@ -29,12 +29,18 @@ from passenger import Passenger
 
 
 ```python
-rebecca_black = None # initialize Rebecca Black here
+rebecca_black = Passenger("Rebecca", "Black", "rebecca.black@gmail.com") # initialize Rebecca Black here
 print(rebecca_black.first) # "Rebecca"
 print(rebecca_black.last) # "Black"
 print(rebecca_black.email) # "rebecca.black@gmail.com"
 print(rebecca_black.rides_taken) # 0
 ```
+
+    Rebecca
+    Black
+    rebecca.black@gmail.com
+    0
+
 
 ![rebecca black in a car](https://media.giphy.com/media/8SS0MSoBHa8la/giphy.gif)
 
@@ -51,11 +57,16 @@ from driver import Driver
 
 
 ```python
-dale_earnhardt = None # initialize Dale Earnhardt here
+dale_earnhardt = Driver("Dale", "Earnhardt") # initialize Dale Earnhardt here
 print(dale_earnhardt.first) # "Dale"
 print(dale_earnhardt.last) # "Earnhardt"
-print(dale_earnhardt.favorit_hobby) # "Driving"
+print(dale_earnhardt.favorite_hobby) # "driving"
 ```
+
+    Dale
+    Earnhardt
+    driving
+
 
 ![DaleEarnhardt](https://media.giphy.com/media/3ohzdSGBkwbvuPdO3S/giphy.gif)
 
