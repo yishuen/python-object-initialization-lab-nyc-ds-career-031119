@@ -12,13 +12,15 @@ In this lab, we will practice defining classes with custom `__init__` methods. W
 
 ## Initializing Instance Objects
 
-> **Remeber:** load the autoreload extension to make sure that our code is re-imported
-```pyhton
+> **Remember:** load the autoreload extension to make sure that our code is re-imported
+
+
+```python
 %load_ext autoreload
 %autoreload 2
 ```
 
-Start off by defining Driver and Passenger classes. In the Passenger class, we will want our passengers to have a first name, last name, email, and rides taken attributes. Let's define our `__init__` method to instantiate these by default and give rides taken a default argument of '0' since new passengers should not have taken any rides. 
+Start off by defining Driver and Passenger classes. In the Passenger class, we will want our passengers to have a `first` name, `last` name, `email`, and `rides_taken` attributes. Let's provide our `__init__` method's `rides_taken` attribute with the default argument of '0' since new passengers should not have taken any rides. 
 
 After we've defined our Passenger `__init__` method, check it out by initializing a new passenger with the first name "Rebecca", the last name "Black", and the email "rebecca.black@gmail.com". Don't worry about creating instance methods or using any attribute decorators in this lesson. We can just instantiate instance variables and use those to access the instance's attributes.
 
@@ -40,7 +42,7 @@ print(rebecca_black.rides_taken) # 0
 
 Great work! Rebecca Black is now in the system and ready to request her ride to the party on Friday! Friday! Friday!
 
-In the Driver class, define an `__init__` method that initializes a driver with the attributes first name, last name, and favorite hobby, which will have a default argument of "driving". 
+In the Driver class, define an `__init__` method that initializes a driver with the attributes `first` name, `last` name, and `favorite_hobby`, which will have a default argument of "driving". 
 
 After we have our Driver `__init__` method, let's initialize a driver with the first name "Dale", last name "Earnhardt". Again, don't worry about creating any instance methods or using any property decorators.
 
@@ -54,7 +56,7 @@ from driver import Driver
 dale_earnhardt = None # initialize Dale Earnhardt here
 print(dale_earnhardt.first) # "Dale"
 print(dale_earnhardt.last) # "Earnhardt"
-print(dale_earnhardt.favorit_hobby) # "Driving"
+print(dale_earnhardt.favorite_hobby) # "driving"
 ```
 
 ![DaleEarnhardt](https://media.giphy.com/media/3ohzdSGBkwbvuPdO3S/giphy.gif)
